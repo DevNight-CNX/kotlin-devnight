@@ -4,10 +4,9 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
-open class BaseItem(var type: Int = 0)
-
 @Parcelize
-data class MovieModel(@SerializedName("results") val listMovie: List<MovieDetailModel>? = listOf()) : BaseItem(1), Parcelable
+data class MovieModel(@SerializedName("results") val listMovie: List<MovieDetailModel>? = listOf())
+    : Parcelable
 
 @Parcelize
 data class MovieDetailModel(@SerializedName("title") val title: String? = null,

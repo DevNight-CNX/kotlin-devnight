@@ -3,7 +3,6 @@ package com.jedsada.workshopkoltincnx.ui.main
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.widget.Toast
 import com.jedsada.workshopkoltincnx.R
 import com.jedsada.workshopkoltincnx.hide
@@ -31,7 +30,6 @@ class MainActivity : MainView, AppCompatActivity() {
     private fun setupView() {
         movieAdapter.apply {
             movieItemOnClick = {
-                Log.d("POND", it.toString())
                 navigate<DetailActivity> { putExtra(DetailActivity.KEY_DETAILS_MOVIE, it) }
             }
         }

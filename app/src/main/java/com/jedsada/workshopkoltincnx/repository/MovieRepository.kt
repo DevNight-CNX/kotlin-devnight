@@ -36,7 +36,7 @@ class MovieRepository {
                 })
     }
 
-    // TODO : bed code
+    // TODO : bad code
     private fun getRetrofit(): Retrofit = Retrofit.Builder()
             .baseUrl("https://workshopup.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create())
